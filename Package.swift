@@ -7,6 +7,7 @@ let package = Package(
         .library(name: "SwiftyXMLParser", targets: ["SwiftyXMLParser"]),
     ],
     targets: [
-        .target(name: "SwiftyXMLParser", dependencies: []),
+        .target(name: "SwiftyXMLParser", dependencies: [], path: "SwiftyXMLParser"),
+        .target(name: "SwiftyXMLParserTest", dependencies: ["SwiftyXMLParser"], path: "SwiftyXMLParserTests"),
     ]
 )
